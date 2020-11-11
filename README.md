@@ -35,8 +35,17 @@ Para ejecutar la aplicación siga las siguientes instrucciones:
 * Crear un archivo JSON de ejemplo (En el repositorio encontrará un par de ejemplos disponibles):  
 ```{"message" : "Texto a Cifrar/Descifrar", "key": "llave para Cifrar/Descifrar"}```
 ### Ejecución del comando 
-* ```$ ab -k -n 1000 -c 100 -p data-cifrar.json -T application/json -rk http://ip_servidor:5000/cipher```
-* ```$ ab -k -n 1000 -c 100 -p data-descifrar.json -T application/json -rk http://ip_servidor:5000/decipher```
+* ```$ ab -n 1000 -c 100 -p data-cifrar.json -T application/json -rk http://ip_servidor:5000/cipher```
+* ```$ ab -n 1000 -c 100 -p data-descifrar.json -T application/json -rk http://ip_servidor:5000/decipher```  
+
+Donde:
+1. -k (KeepAlive). Realizar múltiples solicitudes dentro de una sesión HTTP, funcionalidad de los navegadores por la naturaleza
+2. -r (flag). Indica que la conexión (socket) no se cierra al recibir errores
+2. -n (requests). Número total de solicitudes para ejecutar
+3. -c (concurrency). Cantidad de conexiones concurrentes
+4. -p (file.json). JSON que se envia en el cuerpo del request
+5. -T application/json. Especifica la estructura de datos del body
+
 
 # Cifrado RC4 basado en el proyecto:
 * [https://github.com/g2jun/RC4-Python](https://github.com/g2jun/RC4-Python)
