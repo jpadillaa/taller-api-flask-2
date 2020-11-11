@@ -1,5 +1,5 @@
 # Tutorial API REST- Flask (cipher/decipher)
-API REST - Flask. Esta es una API básica que proporciona 2 endpoints, para cifrar y descifrar información utilizando el algoritmo RC4 utilizando en WEP. Esta aplicación esta desarrollada para el curso de Desarrollo de Soluciones Cloud. 
+API REST - Flask. Esta es una API básica que proporciona 2 endpoints, para cifrar y descifrar información utilizando el algoritmo RC4 utilizando en WEP. Esta aplicación está desarrollada para el curso de Desarrollo de Soluciones Cloud. 
 
 # Ejecución 
 Para ejecutar la aplicación siga las siguientes instrucciones: 
@@ -38,7 +38,7 @@ Para ejecutar la aplicación siga las siguientes instrucciones:
 * ```$ ab -n 1000 -c 100 -p data-cifrar.json -T application/json -rk http://ip_servidor:5000/cipher```
 * ```$ ab -n 1000 -c 100 -p data-descifrar.json -T application/json -rk http://ip_servidor:5000/decipher```  
 
-Donde:
+donde:
 * ```-k (keepAlive)```. Realizar múltiples solicitudes dentro de una sesión HTTP, funcionalidad de los navegadores por la naturaleza
 * ```-r (flag)```. Indica que la conexión (socket) no se cierra al recibir errores
 * ```-n (requests)```. Número total de solicitudes para ejecutar
