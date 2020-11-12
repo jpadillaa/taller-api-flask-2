@@ -23,8 +23,8 @@ Para ejecutar la aplicación siga las siguientes instrucciones:
 
 ## Consumir los servicios
 * Utilice Postman (o una herramienta equivalente) para realizar solicitudes post a los endpoints disponibles. 
-* Ruta Endpoint 1: ```http://ip_servidor:5000/cipher```
-* Ruta Endpoint 2: ```http://ip_servidor:5000/decipher```
+* Ruta Endpoint 1 [POST]: ```http://ip_servidor:5000/cipher```
+* Ruta Endpoint 2 [POST]: ```http://ip_servidor:5000/decipher```
 * Ambos Endpoints requieren un JSON con el siguiente formato:  
 ```{"message" : "Texto a Cifrar/Descifrar", "key": "llave para Cifrar/Descifrar"}```
 
