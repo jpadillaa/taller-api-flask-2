@@ -14,9 +14,9 @@ Para ejecutar la aplicación siga las siguientes instrucciones:
 * ```$ pip install flask-marshmallow```
 
 ## Configurar variables de entorno
-* ```$ set FLASK_APP = app.py```
-* ```$ set FLASK_DEBUG = 1```
-* ```$ set FLASK_ENV = development```
+* ```$ export FLASK_APP = app.py```
+* ```$ export FLASK_DEBUG = 1```
+* ```$ export FLASK_ENV = development```
 
 ## Ejecutar
 * ```$ flask run -h 0.0.0.0```
